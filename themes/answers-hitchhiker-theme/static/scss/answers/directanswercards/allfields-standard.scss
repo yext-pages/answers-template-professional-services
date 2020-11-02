@@ -1,228 +1,3 @@
-.HitchhikerAllFieldsStandard
-{
-  &-title
-  {
-    padding-top: calc(var(--yxt-base-spacing) / 2);
-    padding-left: var(--yxt-base-spacing);
-    padding-bottom: calc(var(--yxt-base-spacing) / 2);
-    padding-right: var(--yxt-base-spacing);
-    display: flex;
-    align-items: center;
-    background-color: var(--yxt-direct-answer-title-background-color);
-    border: var(--yxt-direct-answer-border);
-    @include Text(
-      $color: var(--yxt-direct-answer-title-color)
-    )
-  }
-
-  &-titleText
-  {
-    margin: 0;
-    @include Text(
-      $size: var(--yxt-direct-answer-title-font-size),
-      $line-height: var(--yxt-direct-answer-title-line-height),
-      $weight: var(--yxt-direct-answer-title-font-weight),
-      $color: var(--yxt-direct-answer-title-color)
-    );
-  }
-
-  &-titleLink
-  {
-    &:hover,
-    &:active,
-    &:focus
-    {
-      text-decoration: underline;
-    }
-  }
-
-  &-titleIconWrapper
-  {
-    display: flex;
-    margin-right: calc(var(--yxt-base-spacing) / 2);
-    height: 18px;
-  }
-
-  &-entityName
-  {
-    text-transform: uppercase;
-  }
-
-  &-iconWrapper
-  {
-    margin-right: var(--yxt-base-spacing-sm);
-    display: inline-flex;
-  }
-
-  &-column
-  {
-    width: 100%;
-  }
-
-  &-content
-  {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: var(--yxt-base-spacing);
-    background-color: var(--yxt-direct-answer-content-background-color);
-    border-left: var(--yxt-direct-answer-border);
-    border-right: var(--yxt-direct-answer-border);
-  }
-
-  &-cta
-  {
-    text-transform: uppercase;
-    margin-top: calc(var(--yxt-base-spacing) / 2);
-    justify-content: center;
-
-    @media (min-width: $breakpoint-mobile-max)
-    {
-      margin-top: 0;
-      margin-left: calc(var(--yxt-base-spacing) / 2);
-      margin-right: calc(var(--yxt-base-spacing) / 2);
-      justify-content: center;
-    }
-
-  }
-
-  &-footerWrapper
-  {
-    background-color: var(--yxt-direct-answer-footer-background-color);
-  }
-
-  &-footer
-  {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-left: var(--yxt-base-spacing);
-    padding-right: var(--yxt-base-spacing);
-    padding-top: 8px;
-    padding-bottom: 8px;
-    border: var(--yxt-direct-answer-border);
-  }
-
-  &-footerText
-  {
-    display: inline;
-    margin-right: var(--yxt-base-spacing);
-    @include Text(
-      $size: var(--yxt-direct-answer-footer-font-size),
-      $line-height: var(--yxt-direct-answer-footer-line-height),
-      $weight: var(--yxt-direct-answer-footer-font-weight),
-      $color: var(--yxt-direct-answer-footer-color)
-    );
-
-    font-style: italic;
-  }
-
-  &-thumbs
-  {
-    display: flex;
-    margin: 0;
-  }
-
-  &-thumbUpIcon
-  {
-    transform: rotate(180deg);
-  }
-
-  &-thumbUpIcon,
-  &-thumbDownIcon
-  {
-    display: inline-flex;
-    color: var(--yxt-color-text-secondary);
-  }
-
-  &-thumb
-  {
-    display: inline;
-    flex-shrink: 0;
-    cursor: pointer;
-    font-size: 24px;
-
-    & + &
-    {
-      margin-left: 10px;
-    }
-  }
-
-  &-fieldset
-  {
-    display: inline;
-    margin-inline-start: 2px;
-    margin-inline-end: 2px;
-    line-height: 0;
-    min-inline-size: min-content;
-  }
-
-  &-fieldValueLink
-  {
-    @include Link;
-
-    font-weight: var(--yxt-font-weight-semibold);
-  }
-
-  &-fieldValueRtf
-  {
-    @include rich_text_formatting;
-  }
-
-  &-fieldValue
-  {
-    @include Text(
-      $size: var(--yxt-direct-answer-content-font-size),
-      $line-height: var(--yxt-direct-answer-content-line-height),
-      $weight: var(--yxt-direct-answer-content-font-weight),
-      $color: var(--yxt-direct-answer-content-color)
-    );
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    list-style-type: disc;
-  }
-
-  &-ul
-  {
-    list-style-type: disc;
-    list-style-position: inside;
-  }
-
-  &-feedback
-  {
-    @include Text(
-      $color: var(--yxt-color-text-neutral),
-    );
-    background-color: var(--yxt-color-background-highlight);
-    display: none;
-  }
-
-  &-viewMore
-  {
-    @include Text(
-      $size: var(--yxt-direct-answer-view-details-font-size),
-      $line-height: var(--yxt-direct-answer-view-details-line-height),
-      $weight: var(--yxt-direct-answer-view-details-font-weight),
-    );
-    @include Link;
-
-    display: inline-flex;
-    align-items: center;
-  }
-
-  &-viewMoreWrapper
-  {
-    &:not(:first-child)
-    {
-      margin-top: calc(var(--yxt-base-spacing) / 2);
-    }
-  }
-
-  &-viewMoreIcon
-  {
-    $line-height: var(--yxt-direct-answer-view-details-line-height);
-    margin-left: 4px;
-  }
-}
++\†¤z°%”X•Ûµ©İj·mŠÙ^¥§]Šx-¢—•ËÚ¯,mm«²–œŠx?Ú–v)à•çí½ªòÆÖÚ±ë)iÈ§‚–v)àn‹m¢g•ËÚ¯,mm«²–œŠx?Ú–v)à®(!¶ö«Ë[jÇ¬¥§"b²™ZÉù^Å©b‚x­zkz{^­¶œ’
+èºw\¢Z+½ªòÆ×b­ç-j{0z»b¶W›iÉ ®‹§uÊ%¢¶è­×«½ªòÆ×b­ç-j{0z¶è­×«Šw%¹×“{\¢Z+½ªòÆ×b­ç-j{0z»b¶Wœ¢Z+¶+ey7±¶f«‚)ôŠw%¹×“{l‹7¯j¼±µØ«yËZÌ®Ø­•çèÛ"Íébè^Šm½ªòÆ×b­ç-j{0z»b¶W¥Šw¡z(!·¢‚oj¼±µØ«yËZÌ®Ø­•çèÜŠmr‰h®ö«Ë]Š·œµ©ìÁêíŠÙ^r‰h®Ø­•ââHh½êÚrØ¯yúºË^Æ×^rŠÚ¶*'ºw^®X§zØ­•â¢u«jš^­Ø¬¦V²~W±™ªàŠzâ‚\jW/j¼±µ¶¬zÊZr)àÿh^Šm×Êqz{b·#Z™ë^ÆÛkj{¢¹®¦—«q«‰Ê'Z¶©¥êæj¸"¸ †ÛÚ¯,mm«²–œŠx,™Ø¬¦V²Šybçå{(–é§Â'm‡]4r‰íz{]ŠÊek'å{å{b­ç-Š‰ë£î²ØŸÉÊ'µéí²–œy·­Áç§¥§]Šx/j¼±µ¶¬zÊZr)àm§$‚º.×(–Šïj¼±µØ«yËZÌ­Ê'µéím§$‚º.×(–ŠÛ¢·^®WŸ¶ö«Ë]Š·œµ©ìÁêÛ¢·^­º+uêëŠm½ªòÆ×b­ç-j{0z¶è­×«rÖ­{m­©ì~Šæºš^­Æ¬zf«‚)í¢—•ËÚ¯,mm«²–œŠx?Ú;¬¶'òr‰íz{\z{^®g‰©¢Ÿ¶ëy©)¢)íš†â•éšÆf«‚)í¢&j¸"WŸµÆ¥rö«Ë[jÇ¬¥§"ö™ªàŠzâ‚\jW/j¼±µ¶¬zÊZr)àÿhî²ØŸÉÊ'µéíqéíz·è¢×«Z¶©¥êÛiÉ ®‹§uÊ%¢»Ú¯,mv*ŞrÖ§³«~Š-z¶ÚrH+¢éİr‰h­ú(µêİŠÊek'å{î²ØŸÉÊ'µéí~W±zwZ–('Š×¦±Ç§µêéi×b	^~ÛÚ¯,mm«²–œŠx)i×b
+â‚oj¼±µ¶¬zÊZr)à¥§]Šx-¢Ÿ)Æ–v)àn‹m¢o)Åº+uêïj¼±µØ«yËZÌ­º+uêß¢‹^­7±µØ¬¦V²Šybéš®§®(!¶ö«Ë[jÇ¬¥§"§r[y7±¶È³zö«Ë]Š·œµ©ìÁêß¢‹^­ú'¶È³zX§z¢‚oj¼±µØ«yËZÌ­ú(µêåŠw¡z(!·¢‚oj¼±µØ«yËZÌ­ú(µêß¢{pz(!µÊ%¢»Ú¯,mv*ŞrÖ§³«~Š-z·(–Šß¢{l·)^ŠÖ¥‰Ëaºfìv+)•¬Ÿ•ìfj¸"ŸKaºfÔ¤‡(ÚÚÇè®jèµ«^×ÍzaºfÔ¤‡(Øn™°èÂr¢wb²™ZÊ)åŠwŸ•ì\¢Z+½ªòÆ×(–Ší{lyÊ'uªò¶¦mØ¬¦V²Šybçå{!®)äÑË«²Šé¢)íz·èÛ"Íí¸§¦j¸"WŸ·])Åø•ÛµØ¬¦V²Šybéš®§Šybë-j»v§š®§Šybç§wjq–)Ş…è †İ&Šx§–)Ş²,Şš)Ü¢{^×âzWUj[.)äŠw%¹×‹Šy¢{pz(!¶ö«Ë_¢{pz(!¶Ç¦‰º%uø•ÕZ–ç‘µø§r[z¸œ†×±µú+™«mŠx‰é]U©nz)Ü–ç^Mìm²,Ş½ªòÆ×b­ç-j{0z·(×§µú'¶È³zX§z¢‚oj¼±µØ«yËZÌ­Ê'µéí–)Ş…è †ÜŠm½ªòÆ×b­ç-j{0z·(×§µú'·¢‚\¢Z+½ªòÆ×b­ç-j{0z·(×§µÊ%¢·b²™ZÉù^Åù^ÅØ«yËb¢w(–é§jX +^šÇå{-j»eŠËl·)^·*^v+ºYb²Û-ÊW­Ê—ŠÇ%ŠËl·)^¦‹"¶*'Š{"uçŞyÖÚrH§r[y7±µÊ%¢»Ú¯,mr‰h®×±¶w®¶¶¥m§$‚º.×(–Šïj¼±µÊ%¢¶ÚrH+¢éİ†(!–(!µØ¬¦V²‰Ş¾'°2ŠŞŠw%¹×“{l‹7¯j¼±µØ«yËZÌ®øÁ×­j)l~‰í²,Ş–)Ş…è †ÛÚ¯,mv*ŞrÖ§³«¾'°uëZŠ[%Šw¡z(!·¢‚oj¼±µØ«yËZÌ®øÁ×­j)l~‰íÁè †Ø§r[x¸§‘Ø¬¦V²Šybçå{¥Š	âµé¬qéíz»â{(­å«jš^®z-~*ìµÈb•Ùš®§¶Š\jW/j¼±µ¶¬zÊZr)àÿkâ{(­â¢ybè^Šm½ªòÆ×b­ç-j{0z»â{^µ¨¥²X§z¢‚fj¸"WŸ·Šq

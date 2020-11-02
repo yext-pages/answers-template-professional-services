@@ -1,121 +1,5 @@
-.HitchhikerMenuItemStandard
-{
-  display: flex;
-  font-size: var(--yxt-font-size-md);
-  line-height: var(--yxt-line-height-md);
-  background-color: var(--yxt-color-brand-white);
-  padding: var(--yxt-base-spacing);
-  width: 100%;
-  height: 100%;
-
-  &-body
-  {
-    width: 100%;
-  }
-
-  &-imgWrapper
-  {
-    display: flex;
-    align-items: flex-start;
-    width: 6.25rem;
-    margin-right: 1rem;
-  }
-
-  &-img
-  {
-    width: 100%;
-    height: auto;
-  }
-
-  &-title
-  {
-    text-decoration: none;
-    font-size: var(--yxt-font-size-lg);
-    line-height: var(--yxt-line-height-lg);
-    font-weight: var(--yxt-font-weight-semibold);
-    max-width: 100%;
-    overflow-wrap: normal;
-  }
-
-  &-titleLink
-  {
-    @include Link;
-  }
-
-  &-subtitle
-  {
-    color: var(--yxt-color-text-secondary);
-    padding-bottom: 0;
-    margin-bottom: calc(var(--yxt-base-spacing) / 2);
-  }
-
-  &-listTitle
-  {
-    font-weight: var(--yxt-font-weight-semibold);
-  }
-
-  &-listItems {
-    padding-top: calc(var(--yxt-base-spacing) / 4);
-    list-style-type: disc;
-    list-style-position: inside;
-    padding-bottom: calc(var(--yxt-base-spacing) / 2);
-  }
-
-  &-content
-  {
-    margin-top: calc(var(--yxt-base-spacing) / 2);
-  }
-
-  &-detailsText
-  {
-    @include rich_text_formatting;
-  }
-
-  &-contentCtasWrapper
-  {
-    display: flex;
-    flex-direction: column;
-    @media (min-width: $breakpoint-mobile-max)
-    {
-      flex-direction: row;
-    }
-  }
-
-  &-contentWrapper
-  {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-
-    @media (min-width: $breakpoint-mobile-max)
-    {
-      justify-content: space-between;
-      flex-direction: row;
-      flex-wrap: nowrap;
-    }
-  }
-
-  &-ctasWrapper
-  {
-    text-transform: uppercase;
-    margin-top: calc(var(--yxt-base-spacing) / 2);
-
-    @media (min-width: $breakpoint-mobile-max)
-    {
-      margin-left: calc(var(--yxt-base-spacing) / 2);
-      justify-content: center;
-    }
-  }
-
-  &-primaryCTA,
-  &-secondaryCTA
-  {
-    display: flex;
-    margin-left: calc(var(--yxt-base-spacing) / 2);
-  }
-
-  .js-hidden
-  {
-    display: none;
-  }
-}
++\†¤z³â-zd­jwZ­×b²™ZÉù^Åú'¶È³zö«Ë_¢{l‹7¦vX§z¢‚oj¼±¶X§z¢‚fu¶œ’
+èºw\¢Z+½ªòÆ×(–ŠÛ­©İÂ­z–v)à½ªòÆÖÚ±ë)iÈ§ƒ¶tÒ¢‚uÓFèw,"vØuÓH¦jÚ¦—«v+)•¬Ÿ•ìZ–('Š×¦±ù^ÆËZ®Ü"vØzÛšŞšf«‚)ëŠmÖ·¦Šh0‰Ûa×M!z(!µ«­¢Ø­•ë^Æ×^rŠÚ¶*'‰Ş~‰í²,Ş½ªòÆ×èÛ"Íé`–)Ş…è †ÛÚ¯,m–)Ş…è †Ù`~‰íÁè †ÛÚ¯,m~‰íÁè †Ûš&è•ÙšÇ¶tÒ‹Ş­ùhÃ
+Ú¦z+™©mŠÙ^.)äŠw%¹×‹Šy,¹»b¶Wœ¢Z+½ªòÆ×(–Ší{lyÊ'uªò¥§]Šx¢Ûh›Iš®§n‹m¢g•ËÚ¯,mm«²–œŠx?ÚX¬µ8­•çèÜŠm½ªòÆ×èÜŠm±é¢n‰]–+-"×¦²–v)à¶Š\jW/j¼±µ¶¬zÊZr)àÿ‰b²Û-ÊW­Ê—ŠÇ%ŠËl·)^¦‹"¶*'Š{"uêZuØ§º-¶‰œjW/j¼±µ¶¬zÊZr)àÿg(×§¶f«‚)í¢—•ËÚ¯,mm«²–œŠx?Ù×­j)lMìmŠw%¹×«‰Èm{_¢¹š¶Ø§Ê'µéí
+Ö¬Z¶©¥êİŠÊek'å{å{b­ç-Š‰Ü¢[¦g‰©¢Ÿ¶ëy©)¢)íš†â•éšÅù^ÅØ«yËb¢zèÁÊ'µéíZ¶©¥êİŠÊek'å{å{b­ç-Š‰Ü¢[¦Ÿ¶tÒg‰©¢Ÿ¶ëy©)¢)íš†â•éšÆ;¬¶'òr‰íz{l¥§mëpyéß•ì]Š·œ¶*'®Œ•ìp­ªg£
+Ú¥ËZ±jÚ¦—«µìm¶¶§±ú+šêiz·±éš®§¶Š\jW/j¼±µ¶¬zÊZr)àÿiv&¦Š|"vØ[­æ¤¦ˆ§¶jŠW¦kš®§•çíq©\½ªòÆÖÚ±ë)iÈ§ƒı£ºËb'(×§µÇ§µêé®)š¯ “Çœ¢wZ¯ “Ø¬¦V²~W±™ªàŠy^~×•ËÚ¯,mm«²–œŠx?Ú;!‰×^Ø¬¦V²‰Ş

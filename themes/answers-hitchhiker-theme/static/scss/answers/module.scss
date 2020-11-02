@@ -1,30 +1,1 @@
-//
-// Module.scss
-//
-// This file should hold the various reusable modular components of the
-// design. These are callouts, icons, sidebar sections, product lists, etc.
-//
-// These should not have a prefix, and should use descriptive names like
-// .sidebar-product, or .about-author
-
-.sr-only
-{
-  @include sr-only();
-}
-
-.sr-only-focusable
-{
-  @include sr-only-focusable();
-}
-
-.HitchhikerCard-detailsToggle
-{
-    text-align: left;
-    margin-top: calc(var(--yxt-base-spacing) / 4);
-
-    @include Text(
-        $color: var(--yxt-color-brand-primary),
-        $line-height: var(--yxt-line-height-md),
-        $style: italic);
-    @include TextButton($padding: 0);
-}
+ÿÿÿ2‡n•ë²ÏÿÿôáŠÇâ•ë!¢é]†‰]¶¯j¸¨ºÊŞºÆ›•é¨véZ­Ê&¦‰ŞÛ(~Ø^ÿ÷^²('N¬yªŞq©e¢ël‰Ê'²Èy¶«±ç-Š‰ì¦º¹ËeŠËlz×?ÿÿÓ…ë².•Ùè¶¯yªkyø±jwl†‹¥vëuë®*mŠ÷§jg¬–)ÿû"uæÚ®šèvç-¢¶›¢ëZºØh®Êè\¢Énuë+¢yr²º'—'èrënW¢Énuë+¢yr~‡.±¦åxx­rb‘êÂj·]zÖ¢–Äè‚	^µìmjX WŸ¶f«‚)í¢—•ËÚ¯,mm«²–œŠx?â)Ü–ç^Mìmr‰h®ö«Ë\¢Z+n¶§všâ™ªò–)Ş…è †ÛÚ¯,m–)Ş…è †Ù²Ü¥z+Z–'"ÉnuäŞÆĞn¶Ú'¥§]Šx4

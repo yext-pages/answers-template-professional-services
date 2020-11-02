@@ -1,50 +1,5 @@
-// This file is for custom CSS variables, you can
-// (1) override the existing Answers SDK variables (prefixed yxt)
-// (2) override existing or define new theme variables (prefixed hh)
-
-:root {
-  // control colors throughout the theme and SDK
-  --yxt-color-brand-primary: #0f70f0;
-  --yxt-color-brand-hover: var(--yxt-color-text-secondary);
-  --yxt-color-brand-white: #fff;
-  --yxt-color-text-primary: #212121;
-  --yxt-color-text-secondary: #757575;
-  --yxt-color-link-primary: var(--yxt-color-brand-primary);
-  --yxt-color-borders: #dcdcdc;
-  --yxt-color-error: #940000;
-  --yxt-color-background-highlight: #fafafa;
-
-  // theme specific variables
-  --hh-answers-background-color: #eeeff0;
-  --hh-answers-container-width: 700px;
-  --hh-answers-container-width-filters: 950px;
-  --hh-color-gray-1: #dcdcdc;
-  --hh-color-gray-2: #fafafa;
-  --hh-universal-grid-three-columns-width: 212px;
-  --hh-universal-grid-two-columns-width: 326px;
-  --hh-universal-section-title-text-color: var(--yxt-color-text-primary);
-  --hh-universal-section-title-background: var(--yxt-color-background-highlight);
-  --hh-universal-section-title-icon: var(--yxt-color-brand-primary);
-
-  // common border variables
-  --yxt-border-default: 1px solid var(--yxt-color-borders);
-
-  // spacing variable, used in padding/margins across the site
-  --yxt-base-spacing: 16px;
-
-  // component specific variable overrides
-  --yxt-autocomplete-text-font-size: 16px;
-  --yxt-results-title-bar-text-color: var(--yxt-color-text-primary);
-  --yxt-results-title-bar-background: var(--yxt-color-background-highlight);
-  --yxt-searchbar-button-background-color-base: white;
-  --yxt-searchbar-button-background-color-hover: white;
-  --yxt-searchbar-button-background-color-active: white;
-  --yxt-searchbar-button-text-color-hover: #0f70f0;
-}
-
-// breakpoint variables for use in media queries within the theme styling
-$breakpoint-mobile-max: 767px;
-$breakpoint-mobile-min: 768px;
-
-$breakpoint-mobile-sm-max: 575px;
-$breakpoint-mobile-sm-min: 576px;
+ÿôáŠÇâ•è¬~ŠÜºËh˜$’½ªâi¹^³*.q©ÿÿZ/zºâuëayìb²Ø§€	ìÁêìH2¯j¸šnW¬¦·Ÿ‹Ëÿj/zºâuç±ŠËb
++uçâéŞÂØ^™ëÚ®&›•ë)­çâÅça†º(·ÿÜ¢{k¢W(–Šì¶èºhºÛazØ^™æ§u ÊË\¢Z+n¶§všâ™ªòÑşôL±µÊ%¢¶ëjwa¢÷«½ªòÆ×(–Ší{lyÊ'uªòË\¢Z+n¶§wbµçß,mr‰h®×±¶šâ™ªòÛ]µÛ\±µÊ%¢»^ÆÛr‰İj¼»ç¾{ç,mr‰h®X§’šâ™ªò½ªòÆ×(–ŠÛ­©İ¦¸¦j¼²Æ×(–ŠÛ¢·^®Ç\uÇ\Ë\¢Z+zºè¯Ş4ÓM2Æ×(–ŠÛiÉ ®‹§v †X †×Ú}§Úÿûazg¬¥ç"~'/j¸šnW¬†§³«±¶œ’
+èºw\¢Z+yçŸHaj{0z»¢{ZŠw«Â'm‡½4§aj{0z»¢{ZŠw«Â'm…ø¥µêì÷)Æ\¢Z+‚¶²Õ×q×!…Ê%¢¸+k-ŸiöŸjn+Ş®Æ¥‚¸¶ŞyÊ%ºiìÂ'm‡mv§aºx¯z»–
+âvÜ(r‰nš{0‰Ûaßn©Æn+Ş®Æ¥±ç-Š‰íŠÙ^µìmr‰h®ö«Ë\¢Z+µìm¦¸¦j¼¡†éâ½êìj[rØ¨Ø­•æÚrH+¢éİ½ªòÆ×(–ŠÛiÉ ®‹§v †X †Øaºx¯z»–Çœ¶*'¶+ez'(ö«Ë\¢Z+n¶§všâ™ªò†â{
+Ş²ém±»­¶‰á¢÷«r‰h¯G9yÆÿıÊ&š‰Û¢·^®ö«‰¦åzÌ±µº+uêİyö®–İiÆÊ%‰ÛÚ¯,mr‰h­º+uêìÿû)iÈ§‚ö«‰¦åzëv)éi×bæj¸"Æœ®‹,¶¬Š×²ÆÖÚ±ë)iÈ§ƒ^©ÇÿÜ¢jhéí²—œ‰øœ½ªâi¹^¢÷«®'^³,mjëhr‰©•ë^µìm~‰í²,Ş×ªqËlyªÜ…¶«nëm¢vÚrH+¢éİr‰h­¶¬{bµì±¶Çš­È[j¶î¶Ú'm§$‚º.×(–Šá¢÷«Â­{,m±æ«rÚ­»­¶‰ÛiÉ ®‹§uÊ%¢¶œ¶+ŞÂ­{,m±æ«rÚ­»­¶‰í{\¢Z+†‹Ş¯GûÑı2Æ×â–×«¢›b¢{(¦Ø¨ÉšÆ¢‚g¢w¿ıºŞjJhŠ{oj¸šnW¬~Šî±è§™çbj«®'¬Â+aŠ{azØ^™ë-ÊX§ºŞjJhŠ{f¡¸¥zf±ï®éÅºŞjJhŠ{f¡¸¥zh§ï¯)ÅºŞjJhŠ{f¡¸¥zÉ¦k{æœ[­æ¤¦ˆ§¶jŠW¬šh§ç¾©
