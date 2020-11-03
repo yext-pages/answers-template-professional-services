@@ -1,4 +1,22 @@
-¸g≠≤ÿ^uÁ⁄∫[Z¶) Øzv¨•Á"~'&jök¢¯ùz∫Z≠©í∂∏ßÇf©>∫/â◊´≠ÎnÆ{∂∏ßÉ˜±¶äÌ~È‹∂*'ÅÎCyˆÆñ”§
-b)Ï¶jìÎ¢¯ùz∏üô™OÆã‚uÍÌÜ∫0ùÏÆ∫+>Wö±Ík¢¯ùy´⁄ñ'fjìÎ¢¯ùzπö§˙Ëæ'^Æ+"ûˆ•â—1•Á-±Ë≠ÖÍ‡¢à%zäÊjñË∆Ã"µ»fjìÎ¢¯ùzªh.å¨&¨y∆¨z
-(ÇW´z€´ú3i,Å‰>9Çu`«ÍL¥≥ZÊÊî#uz‡U>pq´ô™[£ﬁ∂ÍÁ¶G≤'R#¢'ñWáB"¬&#¢&£sW&‘Ür'“Œ;ê5 ßÈ7ç≥‚uÁ⁄∫[mÜ∫0ùÏÆ∫++ﬁûf©>∫/â◊´ô™OÆã‚uÍ‚≤)ÔjXù^r€äÿ^Æ
-(ÇW®Æf©nå
+/**
+ * Gets the default api key given a specific map provider.
+ * @param {String} mapProvider
+ * @returns {String}
+ */
+export function getDefaultMapApiKey(mapProvider) {
+    if (!mapProvider) {
+      throw new Error(
+        `Please provide a valid mapProvider. '${mapProvider}' is invalid. Expects either 'google' or 'mapbox'.`
+      );
+    }
+    switch (mapProvider.toLowerCase()) {
+      case 'google':
+        return 'AIzaSyB5D45ghF1YMfqTLSzWubmlCN1euBVPhFw';
+      case 'mapbox':
+        return 'pk.eyJ1IjoieWV4dCIsImEiOiJqNzVybUhnIn0.hTOO5A1yqfpN42-_z_GuLw';
+      default:
+        throw new Error(
+          `Given mapProvider: '${mapProvider}' is invalid. Expects either 'google' or 'mapbox'.`
+        );
+    }
+}

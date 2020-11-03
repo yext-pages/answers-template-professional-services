@@ -1,5 +1,49 @@
-ÿôázÇ¯j¸šnW¬j·§¢Ùj{m¡·œ…©àyÖò¶‡8^ÉªŞ¶yö®–ÛÚ–ç¬~Ší…ëazg¿ıV«‰¦åz‹Ş®¸zË!¢é]mè§¶šÌ®ËÚ®&›•ë,rËŠW«¢‹ıÊ'¶º%r‰h®Ëa®‹ †‹­¶­…éjwR¬±µÊ%¢¶ëjwi®)š¯-ïGôË\¢Z+n¶§v/z»Ú¯,mr‰h®×±¶Çœ¢wZ¯,±µÊ%¢¶ëjwp†+^}÷òÆ×(–Ší{i®)š¯-µÛ]µË\¢Z+µìm±ç(Ö«Ë¾{ç¾rÆ×(–ŠåŠy)®)š¯+Ú¯,mr‰h­ºÚÚkŠf«Ë,mr‰h­º+uêìuÇ\uÌ±µÊ%¢·«®ŠıãM4Ó,mr‰h­¶œ’
-èºwaŠeŠm}§Ú}¯ÿ¶¦zÊ^r'ârö«‰¦åzÈaj{0z»iÉ ®‹§uÊ%¢·y÷ô†§³«±Ê'µ¨§z¼"vØ{ÓJq†§³«±Ê'µ¨§z¼"vØ_Š[^®ÏyÒœa…Ê%¢¸+k-]q×r\¢Z+‚¶²ÙöŸiö¡†éâ½êìjX+‰Ûa­çœ¢[¦Ì"vØv×jq†§Š÷«±©`®'mÂ‡(–é§³¶öêœa†éâ½êìj[rØ¨Ø­•ë^Æ×(–Šïj¼±µÊ%¢»^ÆÚkŠf«Ên+Ş®Æ¥±ç-Š‰íŠÙ^m§$‚º.ÛÚ¯,mr‰h­¶œ’
-èºwaŠeŠm†§Š÷«±©lyËb¢{b¶W¢r‰ïj¼±µÊ%¢¶ëjwi®)š¯(a¾'°­ë.–ÛºÛh/z·(–Šôs—œoÿÜ¢i¨º+uêïj¸šnW¬Ë[¢·^­×ŸjémÖœl¢X½ªòÆ×(–ŠÛ¢·^®Ïÿ²–œŠx/j¸šnW®±çb–v)àşf«‚)ìiÊè²ËazÈ­{,mm«²–œŠx5êœıÊ&¦‰ŞÛ)yÈŸ‰ËÚ®&›•ê/zºâuë2ÆÖ®¶‡(š™^µë^Æ×èÛ"Ííz§±¶·¬º[l¶+ey¶«µìmr‰h®ö«Ë\¢Z+µìm¦¸¦j¼²ÆÚŞ²ém²Ø­•æÚ­¶œ’
-èºwoj¼±µÊ%¢¶ÚrH+¢éİ†(!–(!·,m±æ«rÚ­»­¶‰ÛiÉ ®‹§uÊ%¢¶Ú±ì!Š×²ÆÛj·!mªÛºÛh¶œ’
-èºw\¢Z+†‹Ş¯bµì±¶Çš­È[j¶î¶Ú'm§$‚º.×(–ŠÚrØ¯{bµì±¶Çš­È[j¶î¶Ú'µìmr‰h®/z½ïGôË_Š[^®ŠmŠ‰ì¢›b¢{&k^Šm‰Şÿöëy©)¢)í½ªâi¹^±ú+ºÇ¢g‰ª®z¸³­†)í…ëazg¬·)bëy©)¢)íš†â•éšÇ¾»§ëy©)¢)íš†â•é¢Ÿ¾¼§ëy©)¢)íš†â•ë&™¬yïšqn·š’š"Ù¨n)^²i¢Ÿú§
+// These variables are not meant to be changed by the HH. They are the default values for the theme.
+// Variable overrides should be in the answers-variables.scss file.
+
+:root {
+  // control colors throughout the theme and SDK
+  --yxt-color-brand-primary: #0f70f0;
+  --yxt-color-brand-hover: var(--yxt-color-text-secondary);
+  --yxt-color-brand-white: #fff;
+  --yxt-color-text-primary: #212121;
+  --yxt-color-text-secondary: #757575;
+  --yxt-color-link-primary: var(--yxt-color-brand-primary);
+  --yxt-color-borders: #dcdcdc;
+  --yxt-color-error: #940000;
+  --yxt-color-background-highlight: #fafafa;
+
+  // theme specific variables
+  --hh-answers-background-color: #eeeff0;
+  --hh-answers-container-width: 700px;
+  --hh-answers-container-width-filters: 950px;
+  --hh-color-gray-1: #dcdcdc;
+  --hh-color-gray-2: #fafafa;
+  --hh-universal-grid-three-columns-width: 212px;
+  --hh-universal-grid-two-columns-width: 326px;
+  --hh-universal-section-title-text-color: var(--yxt-color-text-primary);
+  --hh-universal-section-title-background: var(--yxt-color-background-highlight);
+  --hh-universal-section-title-icon: var(--yxt-color-brand-primary);
+
+  // common border variables
+  --yxt-border-default: 1px solid var(--yxt-color-borders);
+
+  // spacing variable, used in padding/margins across the site
+  --yxt-base-spacing: 16px;
+
+  // component specific variable overrides
+  --yxt-autocomplete-text-font-size: 16px;
+  --yxt-results-title-bar-text-color: var(--yxt-color-text-primary);
+  --yxt-results-title-bar-background: var(--yxt-color-background-highlight);
+  --yxt-searchbar-button-background-color-base: white;
+  --yxt-searchbar-button-background-color-hover: white;
+  --yxt-searchbar-button-background-color-active: white;
+  --yxt-searchbar-button-text-color-hover: #0f70f0;
+}
+
+// breakpoint variables for use in media queries within the theme styling
+$breakpoint-mobile-max: 767px;
+$breakpoint-mobile-min: 768px;
+
+$breakpoint-mobile-sm-max: 575px;
+$breakpoint-mobile-sm-min: 576px;

@@ -1,1 +1,13 @@
-ÿöÚmé\¢wâ‚;&¡Û¥yìi¢»l¦·¬zÛi·¥þšÞ±ë^žûZ®­²z{]
+// babel.config.js
+module.exports = {
+  presets: [
+    [
+      '@babel/preset-env',
+      {
+        targets: {
+          node: '13',
+        },
+      },
+    ],
+  ],
+};

@@ -1,1 +1,9 @@
-ü7­z¹¢ë0…ëaz»ayË«­éíº¹b²ËZ‚)à¢ºk¡Ûœ¶*'ýìi¢»_ºw-Š‰â±+Z‚)à²Ö Šx¢f¢žÇ(žË]yö®–Ô­j§€:&j)ì×nôÓYhq©a¢Ëh}øœ{'±µÊ&r‰ì¶ËZ‚)à‰šŠ{
+/**
+ * Determines whether the current url is staging or production.
+ */
+export function isStaging(stagingDomains) {
+  const defaultStagingDomains = ['127.0.0.1', 'localhost', 'office.yext.com'];
+  const _stagingDomains = defaultStagingDomains.concat(stagingDomains);
+  const currentUrl = window.location.href;
+  return _stagingDomains.some(domain => currentUrl.includes(domain));
+}

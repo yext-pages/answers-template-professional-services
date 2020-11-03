@@ -1,2 +1,94 @@
-+\†¤z´­jwZ­×b²™ZÉù^Åú'¶È³zö«Ë_¢{l‹7¦vX§z¢‚oj¼±¶X§z¢‚fu¶œ’
-èºw\¢Z+½ªòÆ×(–ŠÛ­©İÂ­z–v)à½ªòÆÖÚ±ë)iÈ§ƒ¶tÒ¢‚uÓFèw,"vØuÓG(×§µjÚ¦—«v+)•¬Ÿ•ì_•ì]Š·œ¶*'r‰nš|"vØuÓIš®§¶Š\jW/j¼±µ¶¬zÊZr)àÿiv&¦Š|"vØ[­æ¤¦ˆ§¶jŠW¦kî²ØŸÉÊ'µéí²–œy·­Áç§~W±v*ŞrØ¨º0~W±Â¶©Œ+j˜¦jÚ¦—«v+)•¬Ÿ•ìZ–('Š×¦±ù^ÆËZ®Ü"vØzÛšŞšf«‚)ëŠmÖ·¦Šh0‰Ûa×M!z(!µ«­¢Ø­•ë^Æ×^rŠÚ¶*'‰Ş~‰í²,Ş½ªòÆ×èÛ"Íé`–)Ş…è †ÛÚ¯,m–)Ş…è †Ù`~‰íÁè †ÛÚ¯,m~‰íÁè †Ûš&è•Ûb¶W‹Šy"ÉnuââK.nØ­•ç(–Šïj¼±µÊ%¢»^ÆÛr‰İj¼©i×bè¶Ú&Ñ×­j)lMìmŠw%¹×«‰Èm{_¢¹š¶Ø§ËZ±jÚ¦—«µìm¶¶§±ú+šêiz·±éš®§¶Š\jW/j¼±µ¶¬zÊZr)àÿiv&¦Š|"vØ[­æ¤¦ˆ§¶jŠW¦kš®§¶Št™ªàŠy^~×•ËÚ¯,mm«²–œŠx?Úf«‚)ëŠmq©\½ªòÆÖÚ±ë)iÈ§ƒı£ºËb'(×§µÇ§µêé®)š¯ “Çœ¢wZ¯ “Ø¬¦V²~W±™ªàŠ{h¦ö«Ë[jÇ¬¥§"öÈbu×§v+)•¬§¢w
+.HitchhikerStandard
+{
+  display: flex;
+  font-size: var(--yxt-font-size-md);
+  line-height: var(--yxt-line-height-md);
+  background-color: var(--yxt-color-brand-white);
+  padding: var(--yxt-base-spacing);
+  width: 100%;
+  height: 100%;
+
+  &-body
+  {
+    width: 100%;
+  }
+
+  &-contentWrapper
+  {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: calc(var(--yxt-base-spacing) / 2);
+
+    @media (min-width: $breakpoint-mobile-max)
+    {
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+  }
+
+  &-imgWrapper
+  {
+    display: flex;
+    align-items: flex-start;
+    width: 6.25rem;
+    margin-right: 1rem;
+  }
+
+  &-img
+  {
+    width: 100%;
+    height: auto;
+  }
+
+  &-title
+  {
+    text-decoration: none;
+    font-size: var(--yxt-font-size-lg);
+    line-height: var(--yxt-line-height-lg);
+    font-weight: var(--yxt-font-weight-semibold);
+  }
+
+   &-titleLink
+  {
+    @include Link;
+  }
+
+  &-subtitle
+  {
+    color: var(--yxt-color-text-secondary);
+    padding-bottom: 0;
+  }
+
+  &-detailsText
+  {
+    @include rich_text_formatting;
+  }
+
+  &-ctasWrapper
+  {
+    text-transform: uppercase;
+    margin-top: calc(var(--yxt-base-spacing) / 2);
+
+    @media (min-width: $breakpoint-mobile-max)
+    {
+      margin-top: 0;
+      margin-left: calc(var(--yxt-base-spacing) / 2);
+      margin-right: calc(var(--yxt-base-spacing) / 2);
+      justify-content: center;
+    }
+  }
+
+  &-primaryCTA,
+  &-secondaryCTA
+  {
+    display: flex;
+    margin-top: var(--yxt-base-spacing) / 2;
+  }
+
+  .js-hidden
+  {
+    display: none;
+  }
+}

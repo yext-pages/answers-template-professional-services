@@ -1,4 +1,138 @@
-ÿôáŠÇâ•ç(Ö¢Ë-ÊX§‚h±Š{-…«Z­êk¢øy×è­Ê'½éâzwÿôá{&«zgšÛhmê/zºâu×§¢ºŞ¦VœyßÿRØ¥ŠÜŒ‹§²)©¢»n¶)RØ¥ŠÜŒ‹§²h±Š{¬·)b^Æ×^rŠÚ¶*'ºw^®X§zh±Šyb²Û-ÊX§Ø¬¦V²~W±~W±v*ŞrØ¨Ê%ºiåŠËl·)^¦‹"¶*'¢ël‰×¦j¸"WŸ¶ö«Ë[jÇ¬¥§"	š®§¶Šoj¼±µ¶¬zÊZr)à™ªàŠvè¶Ú&½ªòÆÖÚ±ë)iÈ§‚h±Š{-®‰à²Ü¥Šx¢{pz(!¶ö«Ë_¢{pz(!µº%vh±Šw¦²Ü¥Šx¢{l·)^ŠÖ¥‰É¢Æ)ë‰Èm{_¢¹š¶Ø§‚ébÉnuéb²Û-ÊX§‚X¬¶Ër•ër¥çb±Ê%Šw%¹×¥ŠËl·)b	b²Û-ÊW­Ê—yÈ¦jYb™ªàŠvè¶Ú&Òf«‚)åyûoj¼±µ¶¬zÊZr)ànËk¢x"Énuë-®‰à²Ü¥Šxš)Ü–ç^zk-ÊX§‚è§r[zë-ÊX§§(–Šïj¼±µÊ%¢¶ëjwi®)š¯+^Æ×^rŠÚ¶*'ºw^®X§z/z»^Æ×^rŠÚ¶*'‰Ş~‡.±¶œ’
-èºwoj¼±µÊ%¢»^ÆÛr‰İj¼›¢·^®¶Šë8§fj¸"º-¶‰¯j¼±µ¶¬zÊZr)àš,b7±¶È³zö«Ë_¢{l‹7¦vX§z¢‚oj¼±¶X§z¢‚q³¢‚oj¼±µú'·¢‚g¢¹š–Ër•éè®f¥r‰h®ö«Ë\¢Z+µìm¦¸¦j¼Ÿ¢{_jh¥Êö«Ë_¢{_jh¥Éú'¶È³zÈ³zX§z¢‚eŠw¡z(!µú'·¢‚pz(!µú'¶Ër•ë-ÊWœ¢Z+r‰h®h±ŠtŞÆĞn¶Ú'¥§]Šx9§t§èrë¢Z+½ªòÆ×(–ŠÛ­©İ†‹Ş­¶œ’
-èºwg¢w›¢·^¯Zq²‰bvÚÚÊZ­éínŠİzºÚv+¬âœii×b
-ZuØ§‚z-v+nWrêì¢ºhŠ{^®/z»^Æ×^rŠÚ¶*'ºw^®X§yúºÇ(–Šß¡Ë¬r‰h­º+uêõ§(–'_¡Ë¬r‰h®h±ŠrâG(–Šïj¼±µÊ%¢¶ëjwi®)š¯(h½êß¡Ë¬iËb½ç(–Šïj¼±µÊ%¢¶ëjwi®)š¯+^Æ×^rŠÚ¶*'ºw^®X§zh±Š{Ş®ØœjWâ–×«‚º.¥º-¶‰›¢·^­º+uêÛ¢Ûhšö«Ë[¢·^­×Ÿjém¥§]Šx¢Ûh›]©
+// This file contains styling mixins that are provided for convenience
+// They are meant to be overridden or replaced
+
+// Utility Mixins:
+
+@import 'util/UtilityMixins';
+
+@mixin u_styling {
+  text-decoration: underline;
+}
+
+@mixin ul_styling
+{
+  list-style-type: initial;
+  list-style-position: inside;
+}
+
+@mixin ol_styling
+{
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+@mixin strong_styling
+{
+  font-weight: var(--yxt-font-weight-bold);
+}
+
+@mixin em_styling
+{
+  font-style: italic;
+}
+
+@mixin rich_text_formatting
+{
+  ul
+  {
+    @include ul_styling;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  li
+  {
+    margin-bottom: var(--yxt-base-spacing);
+  }
+
+  ol
+  {
+    @include ol_styling;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  b,
+  strong
+  {
+    @include strong_styling;
+  }
+
+  em
+  {
+    @include em_styling;
+  }
+
+  u
+  {
+    @include u_styling;
+  }
+
+  a
+  {
+    color: var(--yxt-color-brand-primary);
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none
+    }
+  }
+
+  p + p
+  {
+    margin-top: var(--yxt-base-spacing);
+  }
+}
+
+@mixin Text(
+  $size: var(--yxt-font-size-md),
+  $line-height: var(--yxt-line-height-xs),
+  $weight: var(--yxt-font-weight-normal),
+  $style: normal,
+  $color: var(--yxt-color-text-primary)
+) {
+  font-family: var(--yxt-font-family);
+  font-size: $size;
+  line-height: $line-height;
+  font-weight: $weight;
+  font-style: $style;
+  color: $color;
+}
+
+@mixin TextButton(
+  $padding: 5px 10px,
+  $focus-color: var(--yxt-color-brand-hover)
+) {
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: $padding;
+
+  &:not(:disabled) {
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:focus {
+      color: $focus-color;
+      border: 1px solid $focus-color;
+    }
+  }
+}
+
+@mixin Link {
+  color: var(--yxt-color-brand-primary);
+
+  &:hover,
+  &:focus,
+  &:active
+  {
+    color: var(--yxt-color-brand-primary);
+    text-decoration: underline;
+  }
+}
+

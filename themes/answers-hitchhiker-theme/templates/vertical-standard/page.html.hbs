@@ -1,1 +1,43 @@
-•¬¨ºÛ?†Ù¥±Êâ¦ßÜ¢·œj·lý©eµé©•«^³ûÞ®Øœj[-jwZ­ßÜ¢YZ¦È›•çâ–×«³úZë¶êmzjej×¬þ÷«¶'–ËZÖ«wû®*mýªi–'~)mz»-zjej×¬þ÷«¶'–ËZÖ«wû®*mþ÷«¶'–·¬º[lr‹§¶×¦¦V­zÏïz»bq©lµ©Ýj·±Êâ¦ßìyªÜ…¶«µé©•«^³ûÞ®Øœj[-jwZ­ßìr¸©·û)zY\…ç$µé©•«^³ûÞ®Øœj[-jwZ­ßìr¸©·ùÚ¾(¶*'µé©•«^³ûÞ®Øœj[-jwZ­ßìr¸©·ûÞ®ØœjZÞ²ém²×¦¦V­zÏïz»bq©lµ©Ýj·±Êâ¦ßéj§jØ¨ž×¦¦V­zÏïz»bq©lµ©Ýj·±Êâ¦ßå¡Æ­Š‰Û‰«-zjej×¬þ÷«¶'–ËZÖ«wû®*mþÊ+¶ŠmŠ‰ìµé©•«^³ûÞ®Øœj[-jwZ­ßìr¸©·÷Úqëlµé©•«^³ûÞ®Øœj[-jwZ­ßìr¸©·÷â–×«nŒmzjej×¬þ÷«¶'–ËZÖ«wû®*mþ¦¬¹¹¢²È¨Ÿû®*mýÊ+yØ¯rV¬°	ìÁêì{0z»z»bq©Rµ©Ýj·B¢YZ¦È›•áb–×«±Ø¯rV¬°	ìÁêì«Ö­ªiz·b½ÉZ²
+{{#> layouts/html }}
+  <div>
+    {{#> script/core }}
+      {{> cards/all }}
+      {{> templates/vertical-standard/script/searchbar }}
+      {{> templates/vertical-standard/script/spellcheck }}
+      {{> templates/vertical-standard/script/navigation }}
+      {{> templates/vertical-standard/script/verticalresults }}
+      {{> templates/vertical-standard/script/pagination }}
+      {{> templates/vertical-standard/script/locationbias }}
+      {{!-- {{> templates/vertical-standard/script/sortoptions }} --}}
+      {{!-- {{> templates/vertical-standard/script/facets }} --}}
+      {{!-- {{> templates/vertical-standard/script/filterbox }} --}}
+      {{!-- {{> templates/vertical-standard/script/qasubmission }} --}}
+    {{/script/core }}
+    <div class="Answers AnswersVerticalStandard">
+      <div class="Answers-navWrapper">
+        <div class="Answers-container">
+          {{> templates/vertical-standard/markup/searchbar }}
+          {{> templates/vertical-standard/markup/navigation }}
+        </div>
+      </div>
+      <div class="Answers-container Answers-resultsWrapper">
+        {{> templates/vertical-standard/markup/spellcheck }}
+        <div class="Answers-filtersAndResults">
+          <!-- Uncomment the following div if you want to include filters, facets, or sort options  -->
+          {{!-- <div class="Answers-filtersWrapper"> --}}
+            {{!-- {{> templates/vertical-standard/markup/sortoptions }} --}}
+            {{!-- {{> templates/vertical-standard/markup/filterbox }} --}}
+            {{!-- {{> templates/vertical-standard/markup/facets }} --}}
+          {{!-- </div> --}}
+          {{> templates/vertical-standard/markup/verticalresults }}
+        </div>
+        {{> templates/vertical-standard/markup/pagination }}
+        {{!-- {{> templates/vertical-standard/markup/qasubmission }} --}}
+      </div>
+    </div>
+    <div class="Answers-footer">
+      {{> layouts/yext-logo }}
+      {{> templates/vertical-standard/markup/locationbias }}
+    </div>
+  </div>
+{{/layouts/html }}

@@ -1,3 +1,39 @@
-{0z»+Ş®Æ¥JÖ§uªİ{0z»+zË¥¶Å«jš^­ù^Æ
-èÃZZuØ§‚Ú)½ªòÆÖÚ±ë)iÈ§ø¥µêìwQzË¥¶Çb²™ZÉù^Åù^ÅØ«yËb¢w(–é§v*ŞrĞ'³«ËCŠ·œ´	ìÁêß¢‹^®–v)àÖ·¦Šw%¹×›¦[^ÆÊZuØ§ƒ^kzmkzk§Š÷«±©QzË¥¶Ì"vØuÓK)zYB…ç$ËR¥ée
-œ’f«‚)í¢›Ú¯,mm«²–œŠx&j¸"º-¶‰¯j¼±µ¶¬zÊZr)à
+.AnswersUniversalStandard .Answers
+{
+  &-resultsWrapper
+  {
+    flex-grow: 1;
+    padding-top: var(--yxt-base-spacing);
+  }
+
+  &-filtersAndResults
+  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-directAnswer
+  {
+    .yxt-DirectAnswer-footer
+    {
+      padding: 1rem;
+      @include bplte(xs) {
+        padding: 1.5rem 1rem;
+      }
+    }
+  }
+
+  &-universalResults
+  {
+    width: 100%;
+  }
+
+  &-spellCheck
+  {
+    .yxt-SpellCheck
+    {
+      margin-top: var(--yxt-base-spacing);
+      margin-bottom: var(--yxt-base-spacing);
+    }
+  }
+}

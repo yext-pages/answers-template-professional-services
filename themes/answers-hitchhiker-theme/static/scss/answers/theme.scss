@@ -1,5 +1,72 @@
-ÿö§³«²Ø^™è(zÈ^­à'³«±Ø¬¦V²~W±~W±v*ŞrØ¨Ê%ºiß•ìp­ªp­ª_•ì`®Œ5¦‹"¶*'­éZ¶+Şš)áz(!µÆ¥s}/j¼±µ«­¡Ê&¦W­z×±µú'¶È³{ÿæŠx^Šm~ŠÚºÚ¢jez×°×H­zk¢{ZŠw«™ªàŠy^~Ö®¶‰š®§®(!µ«­£¶tÒ)Ü–ç^n˜-zÉ°‰Ûa½ªá…©ìÁêìr‰íj)Ş¯¶j·!«âÉnuæé–×±²–v)à•çí½ªòÆÖÚ±ë)iÈ§‚–v)à®(!¶ö«Ë[jÇ¬¥§"	Ú¾š,ŠØ¨·¥jØ¯z–v)à¶ŠuÒœgjõ«jš^®š,ŠØ¨ËbrL­¢%yûtnŠİz¶è¶Ú&Öœl¢XuÇ\uÆÚrH+¢éİr‰h®ö«†§³«±¶œ’
-èºw\¢Z+Â'm‡]4¥§]Šx-¢›Ú¯,mm«²–œŠx3Šw^Æv¯Â¶©¥êóŠw^Åú(µêİŠÊek'å{å{b­ç-Š‰Ü¢[¦©b‚x­zkz{^®;¬¶'òr‰íz{\z{^®–v)à¶Švâœii×bè¶Ú&ÛŠq™ªàŠ{h¦ö«Ë[jÇ¬¥§"ÚrH+¢éİr‰h®ö«†§³«±¶œ’
-èºw\¢Z+~Š-z²âGb²™ZÉù^Æ– Šv­Š‰éi×bh¥Æ¥rö«Ë[jÇ¬¥§"ö­ë.–Ûy§^­Ø¬¦V²~W±¥§]Šx%yû|§±´
-i–')mz»2ÆÕ^®ØœjT^²ém°*.ÑâµÈaŠG«)mz²âIš®§¶Š|§š®§n‹m¢n)Æ÷«¶'•¬º[l
-‹§¶f«‚)ëŠm½ªòÆÖÚ±ë)iÈ§‚É
+// answers theme goes here
+
+.Answers
+{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  position: relative;
+  min-height: calc(30 * var(--yxt-autocomplete-text-font-size)); // min height for autocomplete w 10 items
+
+  &-container
+  {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+    @include bpgte(sm)
+    {
+      width: var(--hh-answers-container-width);
+    }
+  }
+
+  &-search,
+  &-nav
+  {
+    @include bplte(xs)
+    {
+      padding-left: var(--yxt-base-spacing);
+      padding-right: var(--yxt-base-spacing);
+    }
+  }
+
+  &-nav
+  {
+    position: relative;
+    padding-top: 10px;
+  }
+
+  &-navWrapper
+  {
+    position: sticky;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #dcdcdc;
+    background-color: var(--hh-answers-background-color);
+    width: 100%;
+    padding-top: var(--yxt-base-spacing);
+    z-index: 99;
+  }
+
+  &-footer
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-top: var(--yxt-base-spacing);
+    background-color: var(--hh-answers-background-color);
+  }
+
+  &-footerLink
+  {
+    display: flex;
+  }
+
+  &-pagination {
+    padding-top: calc(var(--yxt-base-spacing) / 2);
+  }
+}

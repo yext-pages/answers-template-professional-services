@@ -1,1 +1,31 @@
-ÿûazÇš­è^–—«²ëu¼¡Š^®W¯zY¢Æ)ìš,bÇ­¦º)z»r¦º)z»r½©nzšè¥êíÊö¥¹é¢Æ)é®Š^®Ø²ö¥¹êk¢—«·+.nšè¥êí‰ë'ºYb~Ü©z‡ì¹ºk¢—«¶'¬–+-y§!¦º)Š{.nšè¥êí‰ë"Énuë¶šè¥êíÊšè¥êíÊšè¦ö¥¹ç¥±èŸ·*^¡û.nšè¥êí‰ë
+// these are helpers used by higher level mixins
+@mixin set-property($property, $value)
+{
+  #{$property}: #{$value};
+}
+
+@mixin properties($value, $property, $subproperties: null)
+{
+  @if type-of($subproperties) == 'list'
+  {
+    @each $prop in $subproperties
+    {
+      @include set-property('#{$property}-#{$prop}', $value);
+    }
+  }
+
+  @elseif type-of($subproperties) == 'string'
+  {
+    @include set-property('#{$property}-#{$subproperties}', $value);
+  }
+
+  @elseif type-of($subproperties) == 'null'
+  {
+    @include set-property($property, $value);
+  }
+
+  @else
+  {
+    @error 'Unexpected value of subproperties: #{$subproperties}, expect list, string or empty';
+  }
+}

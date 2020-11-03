@@ -1,4 +1,36 @@
-‰ñâµÈaŠG«%(¬2†â•àIaI§]
-‰©¢w§´Æ©9¸ÞrÖ¬²('r‰íj)Þ®;žÌ®Ã¥ªb)ì‡Š×!†)¬” zÐÞ}«¥´Æ©˜Š{(Ÿr‰©¢w§µ'­¶)à°Æ©™ªO®‹âuêÜ¢jhéíIëmŠx,1ªfj“ë¢øz·¥±ì"¶h¢K©½êí‰Æ¥±:¢wâ‚÷«¶'”§²‰ùš¤*'~(&j¨ø ™ªO®‹âuêÿ‰ÿðŠØ‰ü"¶h¢K©½êí‰Æ¥±:¢wâ‚÷«¶'”§²‰ùš¤*'~(#²‰æj¨ø þ'ÿÂ+aŽÊ'r‰©¢w§µ'­¶)à°Æ©×m…éžuçÚº[fjšbÊ&¦‰ÞžÔž¶Ø§‚Ê/zºâuë/z»bq©lN€¨ø ‰öè¶«y¦ìz{n±ç^}«¥¶Êbž'Ü¢jhéíIëmŠx,1ªfj“ë¢øz»^š™Zµë?½êí‰Æ¥™ª±Êâ¦ßæjšbÊ&¦‰ÞžÔž¶Ø§‚Ã¥él{­†Z(’êoz»bq©lN€¨ø ½êí‰Æ¥)ì¢~f©
-‰ßŠ^š™Zµë?½êí‰Æ¥™ª±Êâ¦ßæjšbžf©
-‰ßŠâü"¶â
+ANSWERS.addComponent('Map', Object.assign({},
+{
+  container: '#js-answersMap',
+  apiKey: HitchhikerJS.getDefaultMapApiKey(
+    {{#if componentSettings.Map.mapProvider}}
+      '{{componentSettings.Map.mapProvider}}'
+    {{else}}
+      {{#with (lookup verticalsToConfig verticalKey)}}
+        {{#if mapConfig}}
+          '{{mapConfig.mapProvider}}'
+        {{/if}}
+      {{/with}}
+    {{/if}}
+  ),
+},
+{{#with (lookup verticalsToConfig verticalKey)}}
+  {{#if mapConfig}}
+    {{{json mapConfig}}},
+  {{/if}}
+{{/with}}
+{{{ json componentSettings.Map }}},
+{
+  {{!-- Add theme default map pin.
+        componentSettings overrides verticalsToConfig,
+        if both are absent, use defaults. --}}
+  pin:
+    {{#if componentSettings.Map.mapProvider}}
+      {{> templates/vertical-map/script/map-pin componentSettings.Map }},
+    {{else}}
+      {{#with (lookup verticalsToConfig verticalKey)}}
+        {{#if mapConfig}}
+          {{> templates/vertical-map/script/map-pin mapConfig }},
+        {{/if}}
+      {{/with}}
+    {{/if}}
+}));
