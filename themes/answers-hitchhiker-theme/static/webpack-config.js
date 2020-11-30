@@ -6,7 +6,11 @@ const HtmlPlugin = require('html-webpack-plugin');
 const RemovePlugin = require('remove-files-webpack-plugin');
 
 module.exports = function () {
-  const jamboConfig = JSON.parse(fs.readFileSync('jambo.json'))
+  const jamboConfig = require('./jambo.json');
+  const InlineAssetHtmlPlugin = require(
+    `./${jamboConfig.dirs.output}/static/webpack/InlineAssetHtmlPlugin`
+  );
+
   const htmlPlugins = [];
   if (fs.existsSync(jamboConfig.dirs.output)) {
     fs.recurseSync(jamboConfig.dirs.output, ['**/*.html'], (filepath, relative) => {
@@ -36,6 +40,7 @@ module.exports = function () {
     plugins: [
       new MiniCssExtractPlugin({ filename: 'bundle.css' }),
       ...htmlPlugins,
+      new InlineAssetHtmlPlugin(),
       new webpack.EnvironmentPlugin(
         ['JAMBO_INJECTED_DATA']
       ),
@@ -63,6 +68,10 @@ module.exports = function () {
               ['@babel/plugin-transform-runtime', {
                 'corejs': 3
               }],
+              '@babel/syntax-dynamic-import',
+              '@babel/plugin-transform-arrow-functions',
+              '@babel/plugin-proposal-object-rest-spread',
+              '@babel/plugin-transform-object-assign',
             ]
           }
         },
@@ -90,7 +99,7 @@ module.exports = function () {
             {
               loader: path.resolve(__dirname, `./${jamboConfig.dirs.output}/static/webpack/html-asset-loader.js`),
               options: {
-                regex: /\\"(static\/assets\/[^"]*)\\"/g
+                regex: /\\"([./]*static\/assets\/[^"]*)\\"/g
               }
             },
             {
