@@ -4,37 +4,5 @@
   //&-nav {
   //  padding-top: 32px;
   //}
-  .HitchhikerFaqAccordion-details ul,
-  .HitchhikerFaqAccordion-details ol
-  {
-    list-style-position: outside;
-    margin-left: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-
-  }
-
-  .HitchhikerFaqAccordion-details li 
-    {
-    margin-bottom: 0;
-    }
-
-  .yxt-FilterOptions-optionLabel:before
-  {
-    background-color: white;
-  }
-
-  // fix CTAs to the bottom of the card
-  .HitchhikerProductProminentImage {
-    &-body {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-    }
-
-    &-contentWrapper {
-      height: 100%;
-      justify-content: space-between;
-    }
-  }
+  
 }

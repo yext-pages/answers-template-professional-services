@@ -10,8 +10,10 @@
       "layouts/header.hbs",
       "layouts/footer.hbs",
       "layouts/headincludes.hbs",
-      "cards"
+      "cards",
+      "static/js/formatters-custom.js"
     ],
+    "translations": "translations",
     "preservedFiles": []
   }
 }
